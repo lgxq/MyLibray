@@ -1,4 +1,4 @@
-package com.ebeitech.library.util;
+package com.lgx.library.util;
 
 import android.Manifest;
 import android.content.DialogInterface;

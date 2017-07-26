@@ -1,4 +1,4 @@
-package com.ebeitech.library.ui;
+package com.lgx.library.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;

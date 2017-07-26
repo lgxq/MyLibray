@@ -1,4 +1,4 @@
-package com.ebeitech.library.util;
+package com.lgx.library.util;
 
 /**
  * Created by liugaoxin on 2017/3/16.

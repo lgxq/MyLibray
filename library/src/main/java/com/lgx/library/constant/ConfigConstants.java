@@ -1,4 +1,4 @@
-package com.ebeitech.library.constant;
+package com.lgx.library.constant;
 
 /**
  * Created by liugaoxin on 2017/3/15.

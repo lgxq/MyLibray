@@ -1,4 +1,4 @@
-package com.ebeitech.library.sqlite;
+package com.lgx.library.sqlite;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

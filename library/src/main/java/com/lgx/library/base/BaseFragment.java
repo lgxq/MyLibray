@@ -1,4 +1,4 @@
-package com.ebeitech.library.base;
+package com.lgx.library.base;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
-
-import com.ebeitech.library.constant.ConfigConstants;
 
 /**
  * Created by liugaoxin on 2017/3/16.

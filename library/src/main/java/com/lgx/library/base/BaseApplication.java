@@ -1,4 +1,4 @@
-package com.ebeitech.library.base;
+package com.lgx.library.base;
 
 import android.app.Application;
 

@@ -1,9 +1,9 @@
-package com.ebeitech.library.util;
+package com.lgx.library.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.ebeitech.library.base.BaseApplication;
+import com.lgx.library.base.BaseApplication;
 
 /**
  * Created by liugaoxin on 2017/3/16.

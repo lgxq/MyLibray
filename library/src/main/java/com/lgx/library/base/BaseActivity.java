@@ -1,4 +1,4 @@
-package com.ebeitech.library.base;
+package com.lgx.library.base;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
