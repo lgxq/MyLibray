@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 /**
  * 创建者:   Leon
  * 创建时间:  2016/10/16 23:43
- * 描述：    TODO
+ * 描述：线程切换工具
  */
 public class ThreadUtils {
     public static final String TAG = "ThreadUtils";

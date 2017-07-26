@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_deep">#333333</color>
+    <color name="text_middle">#666666</color>
+    <color name="text_light">#888888</color>
+
+    <drawable name="click_white_unclick">#ffffff</drawable>
+    <drawable name="click_white_click">#efefef</drawable>
+</resources>

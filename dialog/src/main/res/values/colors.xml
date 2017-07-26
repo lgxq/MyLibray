@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="library_listview_pressed">#F3F1F1</drawable>
+    <drawable name="library_listview_unpress">#ffffff</drawable>
+    <drawable name="library_white_click_unpress">#ffffff</drawable>
+    <drawable name="library_white_click_pressed">#efefef</drawable>
+    <color name="library_blue_main">#00a0e9</color>
+    <color name="library_blue_main_press">#0193d5</color>
+    <color name="library_text_error_hint">#cc6600</color>
+    <color name="library_progress_back">#66000000</color>
+</resources>

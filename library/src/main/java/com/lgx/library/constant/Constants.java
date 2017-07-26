@@ -5,6 +5,6 @@ package com.lgx.library.constant;
  * 系统级的常量设置
  */
 
-public class ConfigConstants {
+public class Constants {
 
 }

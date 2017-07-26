@@ -1,0 +1,27 @@
+apply plugin: 'maven'
+
+def artifactVersion = '1.0.0'//发布的版本
+
+//上传到nexus
+// gradlew uploadArchives
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository(url: "http://nexus.shengpaydev.com/content/repositories/thirdparty") {
+                    authentication(userName: "dev", password: "sdpdev")
+                }
+                pom.project {
+                    name 'sdpDialog'
+                    packaging 'aar'
+                    groupId 'com.shengpay.mobile'
+                    version "$artifactVersion"
+                    artifactId 'sdpDialog'
+                }
+
+            }
+        }
+    }
+}
+
+
