@@ -15,9 +15,8 @@
             android:id="@+id/main_list_header_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/main_list_header_arrow"/>
+            android:src="@drawable/listview_headview_arrow"/>
 
         <TextView
             android:id="@+id/main_list_header_text"
