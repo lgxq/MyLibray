@@ -8,12 +8,14 @@
     <ListView
         android:id="@+id/library_menu_dialog_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:divider="#cccccc"
         android:dividerHeight="1px"
         android:scrollbars="none"/>
 
     <View
+        android:id="@+id/library_menu_dialog_split"
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:background="#cccccc"/>

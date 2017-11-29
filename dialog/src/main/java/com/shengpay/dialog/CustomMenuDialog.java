@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 /**
  * Created by liugaoxin on 2017/7/9.
@@ -18,6 +19,7 @@ import android.widget.ListView;
  */
 
 public class CustomMenuDialog extends Dialog {
+    private boolean mCancelVisible = true;
     private SelectFinishListener mSelectFinishListener;
     private String[] mModels;
 
@@ -41,6 +43,12 @@ public class CustomMenuDialog extends Dialog {
         return this;
     }
 
+    //设置底部的取消是否可见
+    public CustomMenuDialog setCancelVisible(boolean visible) {
+        mCancelVisible = visible;
+        return this;
+    }
+
     public void show() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.library_view_custom_menu, null);
 
@@ -58,12 +66,17 @@ public class CustomMenuDialog extends Dialog {
 
         //取消按钮
         setCancelable(false);
-        view.findViewById(R.id.library_menu_dialog_cancel).setOnClickListener(new View.OnClickListener() {
+        TextView mCancelText = (TextView) view.findViewById(R.id.library_menu_dialog_cancel);
+        mCancelText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dismiss();
             }
         });
+        if(!mCancelVisible) {
+            view.findViewById(R.id.library_menu_dialog_split).setVisibility(View.INVISIBLE);
+            mCancelText.setVisibility(View.GONE);
+        }
 
         //最多占屏幕高度的四分之三，viewHeight获取不到，目前手动计算
         DisplayMetrics dm = getContext().getResources().getDisplayMetrics();
