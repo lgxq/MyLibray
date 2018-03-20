@@ -113,14 +113,14 @@ public class CustomCommonDialog extends Dialog implements View.OnClickListener {
         }
 
         //测量View的高度
-        int width = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
-        int height = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
+        DisplayMetrics dm = getContext().getResources().getDisplayMetrics();
+        int width = View.MeasureSpec.makeMeasureSpec((int) (280 * dm.density), View.MeasureSpec.EXACTLY);
+        int height = View.MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, View.MeasureSpec.AT_MOST);
         view.measure(width, height);
         //最多占屏幕高度的四分之三
-        DisplayMetrics dm = getContext().getResources().getDisplayMetrics();
         int maxHeight = dm.heightPixels / 4 * 3;
         int resultHeight = (view.getMeasuredHeight() > maxHeight ? maxHeight : ViewGroup.LayoutParams.WRAP_CONTENT);
-        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, resultHeight);
+        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams((int) (280 * dm.density), resultHeight);
 
         setContentView(view, params);
         super.show();
