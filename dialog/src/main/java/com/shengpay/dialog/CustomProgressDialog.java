@@ -38,6 +38,11 @@ public class CustomProgressDialog extends Dialog {
         mAnimation = rotateAnimation();
     }
 
+    public void setMessage(String message) {
+        mWarnMessage = message;
+        mWarnText.setText(message);
+    }
+
     @Override
     public void show() {
         mRotateImage.setAnimation(mAnimation);

@@ -49,6 +49,12 @@ public class CustomListDialog extends Dialog {
         return this;
     }
 
+    //点击空白地方是否可以取消
+    public CustomListDialog setCustomCancel(boolean cancelable) {
+        setCancelable(cancelable);
+        return this;
+    }
+
     //展示对话框
     public void show() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.library_dialog_list, null);

@@ -49,6 +49,12 @@ public class CustomMenuDialog extends Dialog {
         return this;
     }
 
+    //点击空白地方是否可以取消
+    public CustomMenuDialog setCustomCancel(boolean cancelable) {
+        setCancelable(cancelable);
+        return this;
+    }
+
     public void show() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.library_view_custom_menu, null);
 

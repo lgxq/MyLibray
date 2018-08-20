@@ -73,6 +73,11 @@ public class CustomCommonDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
+    public CustomCommonDialog setCustomCancel(boolean cancelable) {
+        setCancelable(cancelable);
+        return this;
+    }
+
     public void show() {
         final View view = LayoutInflater.from(getContext()).inflate(R.layout.library_dialog_common, null);
 
