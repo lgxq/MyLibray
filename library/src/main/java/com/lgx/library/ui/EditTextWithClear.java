@@ -94,7 +94,9 @@ public class EditTextWithClear extends AppCompatEditText implements
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
-        setClearIconVisible(s.length() > 0);
+        if(isFocused()) {
+            setClearIconVisible(s.length() > 0);
+        }
     }
 
     @Override
